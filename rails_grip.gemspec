@@ -7,11 +7,11 @@ Gem::Specification.new do |s|
   s.authors     = ['Konstantin Bokarius']
   s.email       = 'bokarius@comcast.net'
   s.files       = ['lib/rails_grip.rb',
-                   'lib/gripmiddleware.rb',
+                   'lib/middleware.rb',
                    'lib/railtie.rb',
-                   'lib/websocketcontext.rb',
-                   'lib/nonwebsocketrequesterror.rb',
-                   'lib/railssettings.rb']
+                   'lib/web_socket_context.rb',
+                   'lib/non_web_socket_request_error.rb',
+                   'lib/settings.rb']
   s.homepage    = 'https://github.com/fanout/rails-grip'
   s.license     = 'MIT'
   s.required_ruby_version = '>= 1.9.0'

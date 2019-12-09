@@ -5,7 +5,7 @@
 #    :copyright: (c) 2015 by Fanout, Inc.
 #    :license: MIT, see LICENSE for more details.
 
-require 'gripcontrol'
+require 'grip_control'
 
 class WebSocketContext
   attr_accessor :orig_meta

@@ -6,12 +6,12 @@
 #    :license: MIT, see LICENSE for more details.
 
 require 'pubcontrol'
-require 'gripcontrol'
+require 'grip_control'
 
-require_relative 'railssettings.rb'
-require_relative 'gripmiddleware.rb'
+require_relative 'settings.rb'
+require_relative 'middleware.rb'
 
-class RailsGrip
+module RailsGrip
   def self.publish(channel, formats, id=nil, prev_id=nil)
     pub = RailsGrip.get_pubcontrol
     pub.publish(RailsSettings.get_prefix + channel, Item.new(
